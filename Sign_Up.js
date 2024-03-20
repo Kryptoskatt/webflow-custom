@@ -21,7 +21,7 @@ mixpanel.track('Sign Up', {
 if (event.target.getAttribute('sign_in') !== null) {
 console.log("sign in event triggered");
 var signInValue = event.target.getAttribute('sign_in');
-console.log("sign in value", signUpValue);
+console.log("sign in value", signInValue);
 mixpanel.track('Sign In', {
 'CTA Name': signInValue,
 'Page URL': pageUrl,
