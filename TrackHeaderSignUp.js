@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
 console.log("track header sign-up");
 var signUpCTA = document.getElementById('header_sign_up');
 var pageUrl = window.location.href;
@@ -14,4 +13,4 @@ mixpanel.track('Header Sign Up', {
 'Page Name': pageName
 });
 });
-});
+
