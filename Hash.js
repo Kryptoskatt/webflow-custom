@@ -16,7 +16,7 @@ return fetch(url)
     });
 }
 
-const owner = 'hazel-ish';
+const owner = 'Kryptoskatt';
 const repo = 'webflow-custom';
 
 
