@@ -22,8 +22,6 @@ console.log("targetUrl found", targetUrl);
 var randomHex = generateRandomHex(6);
 // Append random hex as a query parameter to the target URL
 var targetUrlWithQueryParam = targetUrl + (targetUrl.indexOf('?') === -1 ? '?' : '&') + 'fid=' + randomHex;
-// Redirect to the target URL with the query parameter
-window.location.href = targetUrlWithQueryParam;
 // Open the target URL in a new tab/window
 window.open(targetUrlWithQueryParam, '_blank');
 // Prevent the default behavior of the <a> tag (opening the link in the same tab)
