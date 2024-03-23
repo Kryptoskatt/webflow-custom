@@ -11,18 +11,19 @@ return ('0' + byte.toString(16)).slice(-2);
 
 document.addEventListener('click', function(event) {
 // Check if the clicked element has the custom attribute 'sign_up'
+console.log("sign up event", event);
 var signUpTarget = event.target.getAttribute('sign_up');
 if (signUpTarget !== null) {
-    console.log("signUpTarget found", signUpTarget);
-    // Retrieve the target URL from the href attribute of the clicked <a> tag
-    var targetUrl = event.target.getAttribute('href');
-    console.log("targetUrl found", targetUrl);
-    // Generate random hex
-    var randomHex = generateRandomHex(6);
-    // Append random hex as a query parameter to the target URL
-    var targetUrlWithQueryParam = targetUrl + (targetUrl.indexOf('?') === -1 ? '?' : '&') + 'fid=' + randomHex;
-    // Redirect to the target URL with the query parameter
-    window.location.href = targetUrlWithQueryParam;
+console.log("signUpTarget found", signUpTarget);
+// Retrieve the target URL from the href attribute of the clicked <a> tag
+var targetUrl = event.target.getAttribute('href');
+console.log("targetUrl found", targetUrl);
+// Generate random hex
+var randomHex = generateRandomHex(6);
+// Append random hex as a query parameter to the target URL
+var targetUrlWithQueryParam = targetUrl + (targetUrl.indexOf('?') === -1 ? '?' : '&') + 'fid=' + randomHex;
+// Redirect to the target URL with the query parameter
+window.location.href = targetUrlWithQueryParam;
 }
 });
 
