@@ -8,6 +8,7 @@ pageName = 'Home';
 
 if (event.target.getAttribute('sign_up') !== null) {
 var signUpValue = event.target.getAttribute('sign_up');
+console.log("sign up event is triggered", signUpValue);
 
 mixpanel.track('Sign Up', {
 'CTA Name': signUpValue,
