@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 // Get the current page slug
 console.log("before event is triggered Datatracker Slug");
 var pageSlug = window.location.pathname.split('/').filter(Boolean).pop(); // Extracting "integrations" from URL
@@ -28,4 +29,5 @@ modifiedValue = parts[0] + '_' + pageSlug + '|' + pageSlug;
 
 // Update the data-tracker attribute with the modified value
 element.setAttribute('data-tracker', modifiedValue);
+});
 });
