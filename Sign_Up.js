@@ -1,4 +1,5 @@
 document.addEventListener('click', function(event) {
+console.log("click event is triggered", event);
 var pageUrl = window.location.href;
 var pageName = pageUrl.substring(pageUrl.lastIndexOf('/') + 1);
 
