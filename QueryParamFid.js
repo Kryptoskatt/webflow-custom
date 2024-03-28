@@ -8,9 +8,7 @@ return ('0' + byte.toString(16)).slice(-2);
 }
 
 // Add event listener to all elements with the custom attribute 'sign_up'
-console.log("before event is triggered Query Param");
 document.addEventListener('click', function(event) {
-console.log("click event is triggered queryparam", event);
 // Check if the clicked element has the custom attribute 'sign_up'
 var signUpTarget = event.target.getAttribute('sign_up');
 if (signUpTarget !== null) {
