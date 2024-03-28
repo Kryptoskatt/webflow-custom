@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 console.log("before event is triggered Sign Up");
 document.addEventListener('click', function(event) {
 console.log("click event is triggered", event);
@@ -27,4 +28,5 @@ mixpanel.track('Sign In', {
 'Page Name': pageName
 });
 }
+});
 });
