@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
 console.log("before event is triggered Datatracker Main");
 $(document).ready(function() {
 $(document).on('click', '[data-tracker]', function(e) {
@@ -14,6 +13,6 @@ if (tmpData.length !=2 ) { return ""; }
 return { "action": tmpData[0] ,"label": tmpData[1] };
 }};
 var Track= { trackEvent: function (eventType, data) {mixpanel.track( data.action );
-                                        }};
+                                      }};
 });
-});
+
