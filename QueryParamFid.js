@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
 // Function to generate a cryptographically secure random hexadecimal string
 function generateRandomHex(length) {
 var array = new Uint8Array(length / 2);
@@ -27,5 +26,5 @@ window.open(targetUrlWithQueryParam, '_blank');
 event.preventDefault();
 }
 });
-});
+
 
