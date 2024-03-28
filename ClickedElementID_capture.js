@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
 console.log("before event is triggered Datatracker ClickedElement ID");
 document.addEventListener('click', function(event) {
 console.log("event is triger",event);
@@ -16,4 +15,4 @@ clickedElements.push(clickedElementId);
 localStorage.setItem('clickedKey', JSON.stringify(clickedElements));
 }
 });
-});
+
