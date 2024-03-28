@@ -1,5 +1,4 @@
 // Get the current page slug
-console.log("before event is triggered Datatracker Slug");
 var pageSlug = window.location.pathname.split('/').filter(Boolean).pop(); // Extracting "integrations" from URL
 
 // If no slug is found, set it to 'home'
