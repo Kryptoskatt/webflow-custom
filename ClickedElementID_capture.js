@@ -1,3 +1,4 @@
+console.log("before event is triggered Datatracker ClickedElement ID");
 document.addEventListener('click', function(event) {
 console.log("event is triger",event);
 var clickedElements = localStorage.getItem('clickedKey');
