@@ -6,7 +6,7 @@ const finalResponse = await response.json();
 if(finalResponse){
 console.log(finalResponse);
 localStorage.setItem("latestSHA", finalResponse[0].sha);
-const event = new CustomEvent('cdnScriptReady', { detail: data });
+const event = new CustomEvent('cdnScriptReady');
 document.dispatchEvent(event);
 }
 }catch(error){
