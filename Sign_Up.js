@@ -1,3 +1,4 @@
+console.log("before event is triggered");
 document.addEventListener('click', function(event) {
 console.log("click event is triggered", event);
 var pageUrl = window.location.href;
