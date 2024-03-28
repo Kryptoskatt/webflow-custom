@@ -1,4 +1,4 @@
-
+console.log("before event is triggered Datatracker Main");
 $(document).ready(function() {
 $(document).on('click', '[data-tracker]', function(e) {
     var trackData = $(this).data('tracker');
