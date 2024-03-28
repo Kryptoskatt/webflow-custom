@@ -5,7 +5,9 @@ const response = await fetch(url);
 const finalResponse = await response.json();
 if(finalResponse){
 console.log(finalResponse);
-localStorage.setItem("latestSHA", finalResponse[0].sha)
+localStorage.setItem("latestSHA", finalResponse[0].sha);
+const event = new CustomEvent('cdnScriptReady', { detail: data });
+document.dispatchEvent(event);
 }
 }catch(error){
 console.log("some error occured",error);
