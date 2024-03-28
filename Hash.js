@@ -4,7 +4,8 @@ try{
 const response = await fetch(url);
 const finalResponse = await response.json();
 if(finalResponse){
-    console.log(finalResponse);
+console.log(finalResponse);
+localStorage.setItem("latestSHA", finalResponse[0].sha)
 }
 }catch(error){
 console.log("some error occured",error);
