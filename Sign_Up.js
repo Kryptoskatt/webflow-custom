@@ -15,6 +15,7 @@ var signUpValue = event.target.getAttribute('sign_up');
 mixpanel.track('Sign Up', {
 'CTA Name': signUpValue,
 'Page URL': pageUrl,
+'Common URL': croppedPageUrl,
 'Page Name': pageName
 });
 }
@@ -24,6 +25,7 @@ var signInValue = event.target.getAttribute('sign_in');
 mixpanel.track('Sign In', {
 'CTA Name': signInValue,
 'Page URL': pageUrl,
+'Common URL': croppedPageUrl,
 'Page Name': pageName
 });
 }
