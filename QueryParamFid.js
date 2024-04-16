@@ -1,3 +1,4 @@
+ console.log("dom file");
 // Function to generate a cryptographically secure random hexadecimal string
 function generateRandomHex(length) {
 var array = new Uint8Array(length / 2);
