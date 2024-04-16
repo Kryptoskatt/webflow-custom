@@ -6,7 +6,7 @@ return Array.from(array, function(byte) {
 return ('0' + byte.toString(16)).slice(-2);
 }).join('');
 }
-
+console.log("query param file");
 // Add event listener to all elements with the custom attribute 'sign_up'
 document.addEventListener('click', function(event) {
 // Check if the clicked element has the custom attribute 'sign_up'
