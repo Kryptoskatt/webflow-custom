@@ -9,9 +9,11 @@ return ('0' + byte.toString(16)).slice(-2);
 console.log("query param file");
 // Add event listener to all elements with the custom attribute 'sign_up'
 document.addEventListener('click', function(event) {
+console.log("click event happened");
 // Check if the clicked element has the custom attribute 'sign_up'
 var signUpTarget = event.target.getAttribute('sign_up');
 if (signUpTarget !== null) {
+  console.log("signUpTarget", signUpTarget);
 // Retrieve the target URL from the href attribute of the clicked <a> tag
 var targetUrl = event.target.getAttribute('href');
 // Generate random hex
